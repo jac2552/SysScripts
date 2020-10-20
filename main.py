@@ -3,8 +3,10 @@ import subprocess
 import os
 
 def main():
-    subprocess.call('clear')
-    subprocess.call(['echo', 'You are currently in the'])
-    subprocess.call('pwd')
-    subprocess.call(['echo', 'directory'])
+    while(True):
+        subprocess.call('clear')
+        subprocess.call(['echo', 'Your current directory is:'])
+        subprocess.call('pwd')
+        x = input("What file would you like to create a shortcut for?")
+        print(x)
 main()
